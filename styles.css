@@ -1,0 +1,180 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #4caf50; /* Bright green */
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+article {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article {
+  padding: 20px;
+}
+
+.post-title {
+  font-size: 28px; /* Larger title */
+  color: #007bff; /* Blue title */
+  margin-bottom: 10px;
+}
+
+.author {
+  font-style: italic;
+  color: #777;
+  font-size: 14px;
+}
+
+.book-cover {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 24px; /* Larger section titles */
+  color: #007bff; /* Blue section titles */
+  margin-top: 20px;
+}
+
+/* Add more styles as needed for links, lists, and other elements */
+.book-cover {
+  max-width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: #fffafa;
+}
+.nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #dadada;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cornflowerblue;
+  color: white;
+}
+.nav-part2 {
+  display: flex;
+  gap: 3vw;
+  list-style: none;
+  padding-right: 20px;
+  font-size: large;
+}
+.logo-name {
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+.test {
+  display: none;
+}
+.check-nav {
+  display: none;
+}
+.alpha {
+  background-color: cornflowerblue;
+  text-align: center;
+  list-style-type: none;
+  font-size: 26px;
+  color: white;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .nav-part2,
+  h4 {
+    display: none;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .test {
+    display: block;
+    background-color: cornflowerblue;
+    color: black;
+    margin: 20px;
+  }
+}
+.no-underline {
+  text-decoration: none;
+
+  color: white;
+}
+.info-book {
+  display: none;
+}
+.readmore {
+  color: rgb(6, 6, 244);
+  text-decoration: underline;
+}
+.readmorenone {
+  display: none;
+}
+
+.info-book1 {
+  display: none;
+}
+.readmore1 {
+  color: rgb(6, 6, 244);
+  text-decoration: underline;
+}
+.readmorenone1 {
+  display: none;
+}
+.info-book2 {
+  display: none;
+}
+.readmore2 {
+  color: rgb(6, 6, 244);
+  text-decoration: underline;
+}
+.readmorenone2 {
+  display: none;
+}

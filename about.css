@@ -1,0 +1,287 @@
+.head {
+  color: rgb(255, 28, 28);
+  font-size: 28px;
+}
+.heading {
+  padding-left: 30px;
+  font-size: 25px;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.about {
+  height: 300px;
+}
+.sec1img {
+  display: flex;
+  padding: 25px;
+  /* padding-top: 140px; */
+}
+.para {
+  color: rgb(184, 184, 8);
+
+  line-height: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.noman-intro {
+  color: white;
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
+}
+#aboutme {
+  color: brown;
+  text-transform: uppercase;
+}
+.para {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.firstbuton {
+  background-color: transparent;
+  height: 35px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  background-color: rgb(205, 175, 6);
+}
+.firstbuton:hover {
+  transform: scale(1.2);
+}
+.box {
+  height: 3px;
+  width: 300px;
+  background-color: rgb(39, 37, 37);
+}
+.color1 {
+  background-image: linear-gradient(red, yellow);
+  height: 3px;
+  width: 280px;
+}
+.color3 {
+  background-image: linear-gradient(red, yellow);
+  height: 3px;
+  width: 230px;
+}
+.color2 {
+  background-image: linear-gradient(red, yellow);
+  height: 3px;
+  width: 270px;
+}
+.color4 {
+  background-image: linear-gradient(rgb(184, 0, 0), yellow);
+  height: 3px;
+  width: 200px;
+}
+.total {
+  padding: 40px;
+  justify-content: center;
+  display: flex;
+
+  flex-direction: column;
+}
+h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.tech {
+  color: white;
+  margin: 0;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 20px;
+}
+.testskills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fef8dd;
+}
+.twobox {
+  padding: 45px;
+}
+.service {
+  background-color: rgb(6, 6, 90);
+  /* height: 150px; */
+  width: 70%;
+  margin-left: 13%;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.code {
+  background-color: white;
+  height: 150px;
+  width: 200px;
+}
+
+.fonts {
+  background-color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+.fonts p {
+  background-color: white;
+  font-size: x-large;
+  color: brown;
+}
+.word {
+  color: black;
+  background-color: white;
+  font-size: large;
+  text-decoration: underline;
+}
+.firstpara {
+  font-size: 24px;
+}
+.headtwo {
+  color: white;
+  text-align: center;
+}
+.skills {
+  color: brown;
+}
+.image {
+  background-image: url("alpha.jpg");
+  /* height: 100vh; */
+  width: 100%;
+  height: 200%;
+  flex-wrap: wrap;
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .image {
+    background-image: url("test.jpg");
+    height: 100vh;
+    background-size: cover; /* Adjust the background size as needed */
+  }
+}
+.headingservice {
+  text-align: center;
+  color: rgb(3, 3, 121);
+  font-size: 40px;
+  margin: 0;
+  line-height: 0;
+}
+.paraservice {
+  color: rgb(22, 105, 22);
+  text-align: center;
+}
+.contact {
+  text-align: center;
+}
+.name,
+.email,
+.message {
+  background-color: pink;
+  width: 65%;
+  height: 40px;
+}
+.message {
+  height: 200px;
+}
+.button {
+  background-color: rgb(4, 4, 173);
+}
+.follow {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .testskills {
+    flex-direction: column;
+  }
+  .service {
+    flex-direction: column;
+    margin: 25px;
+
+    align-items: center;
+  }
+  .name,
+  .email,
+  .message {
+    width: 70%;
+    height: 30px;
+  }
+  .message {
+    height: 200px;
+  }
+}
+.first,
+.second,
+.third {
+  color: white;
+  margin: 20px;
+}
+
+/* nav bar code */
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #dadada;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cornflowerblue;
+  color: white;
+}
+.nav-part2 {
+  display: flex;
+  gap: 3vw;
+  list-style: none;
+  padding-right: 20px;
+  font-size: large;
+}
+.logo-name {
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+.test {
+  display: none;
+}
+.check-nav {
+  display: none;
+}
+.alpha {
+  background-color: cornflowerblue;
+  text-align: center;
+  list-style-type: none;
+  font-size: 26px;
+  color: white;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .nav-part2,
+  h4 {
+    display: none;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .test {
+    display: block;
+    background-color: cornflowerblue;
+    color: black;
+    margin: 20px;
+  }
+}
+.no-underline {
+  text-decoration: none;
+  color: white;
+}

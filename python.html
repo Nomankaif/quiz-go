@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javscript</title>
+    <link rel="stylesheet" href="python.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body onload="start()">
+    <div class="main">
+      <div class="nav">
+        <h2 class="logo-name">go-quiz</h2>
+        <div class="nav-part2">
+          
+          <li><a href="index.html" class="no-underline">home</a></li>          
+          <li><a href="blog.html" class="no-underline">blog</a></li> 
+          <li><a href="about.html" class="no-underline">AboutUs</a></li> 
+          <li><a href="sign.html" class="no-underline">signup</a> </li>
+        </div>
+        <li class="test"><i class="fa-solid fa-bars fa-xl"></i></li>
+      </div>
+    </div>
+    <div class="check-nav alpha">
+      <li><a href="index.html" class="no-underline">home</a></li>
+      <hr />
+      <li><a href="blog.html" class="no-underline">blog</a></li> 
+      <hr />
+      <li><a href="about.html" class="no-underline">AboutUs</a></li>
+      <hr />
+      <li><a href="sign.html" class="no-underline">signup</a> </li>
+      <hr />
+    </div>
+    <div class="all-quiz">
+    <div class="time-display">
+      <span class="digit" id="minute">00</span>
+      <span>:</span>
+      <span class="digit" id="second">00</span>
+      
+    </div>
+    <main>
+      <section class="questions">
+        <h2>Question <span class="question-number">1</span></h2>
+        <p class="question-mcq"></p>
+
+        <ul>
+          <li>
+            <input type="radio" id="ans1" class="answer" name="answer" />
+            <label for="ans1" id="option1">answer option</label>
+          </li>
+          <li>
+            <input type="radio" id="ans2" class="answer" name="answer" />
+            <label for="ans2" id="option2">answer option</label>
+          </li>
+          <li>
+            <input type="radio" id="ans3" class="answer" name="answer" />
+            <label for="ans3" id="option3">answer option</label>
+          </li>
+          <li>
+            <input type="radio" id="ans4" class="answer" name="answer" />
+            <label for="ans4" id="option4">answer option</label>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <button class="submit" id="button">Submit</button>
+    </footer>
+
+    <h1 class="true-false-heading">True or False Quiz</h1>
+    <div class="main-t-f">
+      <span class="update-ques">question-<span class="upd-num">1</span></span>
+      <p id="question-t-f"></p>
+      <div class="buttons">
+        <button onclick="checkAnswer(true)">True</button>
+        <button onclick="checkAnswer(false)">False</button>
+      </div>
+    </div>
+  </br>
+    <div class="flash-content">
+      <div id="flash-question">
+        <div class="flash-question-text">please select question from cards</div>
+      </div>
+      <div class="flash-main">
+        <div class="flash-card1" id="one"> Q) a = [1, 2, 3, 4, 5]
+          print(len(a[1:3]))
+          
+        </div>
+        <div class="flash-card2" id="two"> Q)Given the list nums = [2, 4, 6, 8, 10], what is the output of the following code snippet? </br>print(sum(nums) / len(nums))</div>
+        <div class="flash-card3" id="three"> Q)Given the list nums = [4, 8, 12, 16, 20], what is the output of the following expression?</br> max(nums) - min(nums)
+        </div>
+        <div class="flash-card4" id="four">Q)t = (1, 2, [3, 4], 5)
+        </br> t[2].append(6) print(len(t))
+        </div>
+        
+        <div class="flash-card1" id="five">2</div>
+        <div class="flash-card2" id="six">6</div>
+        <div class="flash-card3" id="seven">16</div>
+        <div class="flash-card4" id="eight">4</div>
+      </div>
+    </div>
+    
+ 
+    <button class="final-submit" onclick="stoping()">check your answer</button>
+  </div>
+  
+
+
+        <div class="result-of-quiz">
+          <div class="time-display">
+            <h2>time taken is <span class="time"></span></h2>
+          </div>
+
+    <div class="result-display-js">
+      <div class="pie-chart">
+        <div class="chart"></div>
+      </div>
+      <div class="result-info">
+        <p class="result-head">mcq result</p>
+        <ul>
+          <li >
+            <li class="result-list">no of question in the mcq<span>-4</span></li>
+            <li class="result-list">no of question answer correctly- <span class="score-quiz-result"></span></li>
+            <li class="result-list">accuracy <span class="acc-quiz-result"></span></li>
+            
+          
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="result-display-true-false">
+      <div class="pie-chart-t-f">
+      <div class="chart-t-f"></div>
+      </div>
+      <div class="result-info-t-f">
+        <div class="result-head">true/false result</div>
+        <ul>
+          <li class="result-t-f">no of question in the mcq<span>-7</span></li>
+          <li class="result-t-f">no of question answer correctly <span class="score-quiz-result-t-f"></span></li>
+          <li class="result-t-f">accuracy <span class="acc-quiz-t-f"></span></li>
+        </ul>
+      </div>
+    </div>
+
+   
+    
+
+
+</div>    
+    <script src="python.js">
+    </script>
+    
+   
+  </body>
+</html>

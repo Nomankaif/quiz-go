@@ -1,0 +1,169 @@
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: #fffafa;
+}
+.nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #dadada;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cornflowerblue;
+  color: white;
+}
+.nav-part2 {
+  display: flex;
+  gap: 3vw;
+  list-style: none;
+  padding-right: 20px;
+  font-size: large;
+}
+.logo-name {
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+.test {
+  display: none;
+}
+.check-nav {
+  display: none;
+}
+.alpha {
+  background-color: cornflowerblue;
+  text-align: center;
+  list-style-type: none;
+  font-size: 26px;
+  color: white;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .nav-part2,
+  h4 {
+    display: none;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .test {
+    display: block;
+    background-color: cornflowerblue;
+    color: black;
+    margin: 20px;
+  }
+}
+
+.no-underline {
+  text-decoration: none;
+
+  color: white;
+}
+.container-sign {
+  display: flex;
+  flex-direction: row;
+}
+.sign-detail {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-face {
+  width: 90%;
+  height: 105%;
+}
+
+.name,
+.email,
+.password,
+.re-password,
+.birth,
+.gender {
+  margin-bottom: 1%;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 80%;
+}
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 80%;
+}
+input[type="radio"] {
+  margin: 10px 8px;
+}
+
+@media (max-width: 1000px) {
+  .container-sign {
+    flex-direction: column;
+  }
+  .image-face {
+    width: 100%;
+    height: 100%;
+  }
+}
+.sign-head {
+  color: green;
+}
+.sub-but button {
+  padding: 10px 20px;
+  background-color: rgb(13, 204, 13);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.sub-but button:hover {
+  background-color: rgb(13, 175, 13);
+}
+.sub-but {
+  margin-left: 30%;
+}
+/* .box {
+  width: 3px;
+  border: 1px solid black;
+  height: 5px;
+}
+.para {
+  width: 90%;
+} */
+.para {
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+.right {
+  display: none;
+}
